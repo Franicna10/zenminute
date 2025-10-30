@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ZenMinute - Inicio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="home">
+  <header class="header">
+    <div class="logo"><img src="assets/images/logo.png" alt="ZenMinute logo"></div>
+    <button class="hamburger-menu" id="hamburgerMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="mobile-menu nav" id="mobileMenu">
+      <a href="pages/recetas.html">Recetas</a>
+      <a href="pages/estiramientos.html">Estiramientos</a>
+      <a href="pages/metas.html">Metas</a>
+      <a href="pages/sobre.html">Sobre mí</a>
+      <a href="pages/contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <main>
+    <section class="hero home-hero" id="home">
+      <div class="hero-inner">
+        <h1>Hábitos Saludables</h1>
+        <p class="hero-sub">ZenMinute — una forma de vida</p>
+        <p><button class="btn" onclick="window.location.href='pages/recetas.html'">COMENZAR</button></p>
+      </div>
+    </section>
+
+    <!-- Del día section -->
+    <section class="section container" id="del-dia">
+      <h2>De hoy</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="recipe-img" src="assets/images/recipe_1.jpg" alt="Receta del día">
+          <div class="recipe-title">Receta del día: Poke Bowl Tropical</div>
+          <p style="color:var(--muted)">Ligero y nutritivo para cargar energías.</p>
+          <p><a class="btn" href="pages/recetas.html">Ver más recetas</a></p>
+        </article>
+        <article class="card">
+          <img class="recipe-img" src="assets/images/zen.jpeg" alt="Estiramiento del día">
+          <h3>Estiramiento del día</h3>
+          <p style="color:var(--muted)">Respiración y cuello — 5 a 8 minutos.</p>
+          <p><a class="btn" href="pages/estiramientos.html">Ver más estiramientos</a></p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">ZenMinute &copy;</div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
