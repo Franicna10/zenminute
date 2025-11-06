@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contacto - ZenMinute</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="../assets/images/logo.png" alt="ZenMinute logo"></div>
+        <button class="hamburger-menu" id="hamburgerMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav mobile-menu" id="mobileMenu">
+            <a href="../index.html">Inicio</a>
+            <a href="recetas.html">Recetas</a>
+            <a href="estiramientos.html">Estiramientos</a>
+            <a href="metas.html">Metas</a>
+            <a href="sobre.html">Sobre mí</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="container section">
+        <h1>Contacto / Foro</h1>
+        <div class="card">
+            <div id="forumList" class="forum-list"></div>
+            <form id="forumForm"><input id="name" class="input" placeholder="Tu nombre (opcional)"><textarea
+                    id="message" class="input" rows="4" placeholder="Deja tu comentario..."></textarea><button
+                    class="btn" type="submit">Enviar comentario</button></form>
+            <p style="margin-top:12px;color:#666;font-size:13px">Nota: este foro es front-end y guarda comentarios en tu
+                navegador (localStorage).</p>
+        </div>
+    </main>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Metas - ZenMinute</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><img src="../assets/images/logo.png" alt="ZenMinute logo"></div>
+      <button class="hamburger-menu" id="hamburgerMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav mobile-menu" id="mobileMenu">
+        <a href="../index.html">Inicio</a>
+        <a href="recetas.html">Recetas</a>
+        <a href="estiramientos.html">Estiramientos</a>
+        <a href="metas.html">Metas</a>
+        <a href="sobre.html">Sobre mí</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main class="container section">
+      <h1>Metas Diarias</h1>
+      <p>Aquí puedes encontrar ideas de metas para incorporar pequeños hábitos en tu día a día. Cuando marques una meta como "Hecho", se registrará en tu calendario personal (guardado localmente).</p>
+
+      <div class="card">
+        <h3>Mi calendario</h3>
+        <div id="metasCalendarRoot" class="calendar">
+          <div class="cal-header">
+            <button id="calPrev" class="btn small" aria-label="Mes anterior">‹</button>
+            <div id="calMonthLabel" class="month-label"></div>
+            <button id="calNext" class="btn small" aria-label="Mes siguiente">›</button>
+          </div>
+          <div id="metasCalendar" class="calendar-grid" aria-live="polite"></div>
+        </div>
+        <p style="font-size:13px;color:var(--muted);margin-top:8px">Fechas resaltadas muestran días donde marcaste al menos una meta como hecha.</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card" data-id="meta-diaria-10min">
+          <h3>10 minutos</h3>
+          <p>Dedica 10 minutos al día a una actividad saludable: estiramientos, meditación o preparar una comida sencilla.</p>
+          <p><button class="btn meta-toggle">Marcar como hecho</button></p>
+        </article>
+
+        <article class="card" data-id="meta-semanal-3recetas">
+          <h3>Receta Nueva</h3>
+          <p>Proponte probar una receta sencilla nueva para variar la alimentación.</p>
+          <p><button class="btn meta-toggle">Marcar como hecho</button></p>
+        </article>
+
+        <article class="card" data-id="meta-bienestar">
+          <h3>Sueño</h3>
+          <p>Dormir 8hs o más</p>
+          <p><button class="btn meta-toggle">Marcar como hecho</button></p>
+        </article>
+
+        <article class="card" data-id="meta-mensual-revisar">
+          <h3>Despejarse</h3>
+          <p>Caminar al aire libre al menos 15 minutos</p>
+          <p><button class="btn meta-toggle">Marcar como hecho</button></p>
+        </article>
+
+      </div>
+
+    </main>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
