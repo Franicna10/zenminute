@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contacto - ZenMinute</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="page-bg-image" style="background-image: url('../assets/images/contacto.jpg')" aria-hidden="true"></div>
+    <header class="header">
+        <div class="logo"><img src="../assets/images/logo.png" alt="ZenMinute logo"></div>
+        <button class="hamburger-menu" id="hamburgerMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav mobile-menu" id="mobileMenu">
+            <a href="../index.html">Inicio</a>
+            <a href="recetas.html">Recetas</a>
+            <a href="estiramientos.html">Estiramientos</a>
+            <a href="metas.html">Metas</a>
+            <a href="sobre.html">Sobre mí</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="container section">
+        <h1>Contacto</h1>
+        <div class="card">
+            <h3>Envíanos un mensaje</h3>
+            <div id="forumList" class="forum-list"></div>
+            <form id="forumForm"><input id="name" class="input" placeholder="Tu nombre (opcional)"><textarea
+                    id="message" class="input" rows="4" placeholder="Deja tu comentario..."></textarea><button
+                    class="btn" type="submit">Enviar comentario</button></form>
+            <p style="margin-top:12px;color:#666;font-size:13px">Nota: este foro es front-end y guarda comentarios en tu
+                navegador (localStorage).</p>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+            <h3>Chat en vivo (local)</h3>
+            <p style="color:var(--muted);font-size:14px">Chatea con otros usuarios conectados en este navegador (se sincroniza entre pestañas usando BroadcastChannel). No es un chat global en servidor.</p>
+            <div style="display:flex;gap:12px;align-items:center;margin-top:8px">
+              <input id="chatName" class="input" placeholder="Tu nombre para el chat (ej: Ana)">
+              <div id="onlineCount" style="font-size:13px;color:var(--muted)">Usuarios conectados: 1</div>
+            </div>
+            <div id="chatList" class="forum-list" style="height:220px;margin-top:10px;overflow:auto"></div>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <input id="chatMessage" class="input" placeholder="Escribe un mensaje...">
+              <button id="chatSend" class="btn">Enviar</button>
+            </div>
+            <p style="margin-top:10px;font-size:13px;color:#666">Nota: el chat es local y sirve para intercambiar recetas y opiniones entre usuarios de la misma máquina o pestañas del navegador. Para chat real entre diferentes dispositivos se necesita un servicio en servidor (p. ej. Firebase).</p>
+        </div>
+    </main>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
